@@ -17,5 +17,17 @@ Route::get('/', function () {
 });
 
 Route::get('users',function(){
-	return "users";
+	$users = [
+		'0' => [
+			'first_name' => 'Renato',
+			'last_name' => 'Hysa',
+			'location' => 'Albania'
+		],
+		'1' => [
+			'first_name' => 'aung',
+			'last_name' => 'myat',
+			'location' => 'Yangon'
+		]
+	];
+	return $users;
 });
